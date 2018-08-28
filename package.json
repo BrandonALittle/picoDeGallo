@@ -1,0 +1,19 @@
+{
+  "name": "picodegallo",
+  "version": "1.0.0",
+  "description": "A langauge learning app, initially for Vietnamese.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brandonalittle/picodegallo.git"
+  },
+  "author": "brandonalittle",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brandonalittle/picodegallo/issues"
+  },
+  "homepage": "https://github.com/brandonalittle/picodegallo#readme"
+}
