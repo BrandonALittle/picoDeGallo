@@ -8,12 +8,28 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/brandonalittle/picodegallo.git"
+    "url": "git+https://github.com/langnition/picodegallo.git"
   },
-  "author": "brandonalittle",
+  "author": "Langnition",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/brandonalittle/picodegallo/issues"
+    "url": "https://github.com/langnition/picodegallo/issues"
   },
-  "homepage": "https://github.com/brandonalittle/picodegallo#readme"
+  "homepage": "https://github.com/langnition/picodegallo#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.0",
+    "babel-preset-env": "^1.7.0",
+    "webpack": "^4.17.1"
+  },
+  "dependencies": {
+    "apollo-boost": "^0.1.15",
+    "apollo-server": "^2.0.5",
+    "apollo-server-express": "^2.0.4",
+    "express": "^4.16.3",
+    "graphql": "^0.13.2",
+    "react": "^16.4.2",
+    "react-apollo": "^2.1.11",
+    "react-dom": "^16.4.2"
+  }
 }
