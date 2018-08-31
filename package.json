@@ -2,7 +2,7 @@
   "name": "picodegallo",
   "version": "1.0.0",
   "description": "A langauge learning app, initially for Vietnamese.",
-  "main": "index.js",
+  "main": "server/index.js",
   "scripts": {
     "test": "test",
     "build": "webpack --watch",

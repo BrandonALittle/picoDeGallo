@@ -5,6 +5,8 @@ import { ApolloClient } from 'apollo-client';
 import { createHttpLink } from 'apollo-link-http';
 import { InMemoryCache } from 'apollo-cache-inmemory';
 
+
+// Apollo Client config
 const httpLink = createHttpLink({
     uri: 'http://localhost:8085'
 });
@@ -14,11 +16,23 @@ const client = new ApolloClient({
     cache: new InMemoryCache()
 });
 
-const App = () => <div>THIS IS IT</div>;
+// simple app component
+const App = () => (
+    <div>
+		{/* checking the react context api */}
+        <Consumer>
+            {(message) => <h1>{message}</h1>}
+        </Consumer>
+    </div>
+);
+
+const { Provider, Consumer } = React.createContext();
 
 ReactDOM.render(
-    <ApolloProvider client={client}>
-      <App />
-    </ApolloProvider>,
-    document.getElementById("root"
-));
+    <Provider value="Welcome to My App Johis">
+        <ApolloProvider client={client}>
+             <App />
+        </ApolloProvider>
+    </Provider>,
+    document.getElementById("root")
+);
