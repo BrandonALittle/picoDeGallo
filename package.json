@@ -1,7 +1,7 @@
 {
   "name": "picodegallo",
   "version": "1.0.0",
-  "description": "A langauge learning app, initially for Vietnamese.",
+  "description": "A langauge learning app",
   "main": "server/index.js",
   "scripts": {
     "test": "test",
