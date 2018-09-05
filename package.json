@@ -29,6 +29,8 @@
   },
   "dependencies": {
     "apollo-boost": "^0.1.15",
+    "apollo-client": "^2.4.1",
+    "apollo-link-context": "^1.0.8",
     "apollo-server": "^2.0.5",
     "apollo-server-express": "^2.0.4",
     "bcrypt": "^3.0.0",
@@ -36,6 +38,7 @@
     "express": "^4.16.3",
     "express-jwt": "^5.3.1",
     "graphql": "^0.13.2",
+    "graphql-tag": "^2.9.2",
     "jsonwebtoken": "^8.3.0",
     "mongoose": "^5.2.12",
     "react": "^16.4.2",
