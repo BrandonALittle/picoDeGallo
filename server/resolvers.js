@@ -9,7 +9,7 @@ const resolvers = {
           if(!user) {
               throw new Error('You are not authenticated!');
           }
-
+          console.log(`The user ${user.username} has been authenticated and returned.`)
           // user is authenticated
           return await User.findOne({ username: user.username })
       }
@@ -22,11 +22,12 @@ const resolvers = {
             if (!user) {
                 throw new Error('There was an error creating the user');
             }
+            console.log(`The user ${user} was successfully created.`)
             // return json web token
             return jsonwebtoken.sign(
                 { username: user.username, email: user.email },
                 secret,
-                { expiresIn: '1y' }
+                { expiresIn: '100000000000000' }
             );
         },
 
@@ -37,12 +38,12 @@ const resolvers = {
             if (!user) {
                 throw new Error('These credentials do not match any user in the database.');
             }
-
+            console.log(`The user ${user} has successfully logged in.`)
             // return json web token
             return jsonwebtoken.sign(
                 { username: user.username, email: user.email },
                 secret,
-                { expiresIn: '1d' }
+                { expiresIn: '1000000000000000' }
             );
         }
       }

@@ -1,7 +1,5 @@
 var mongoose = require('mongoose');
 var bcrypt = require('bcrypt');
-const bluebird = require('bluebird');
-const bcryptAsync = bluebird.promisifyAll(bcrypt);
 
 var UserSchema = new mongoose.Schema({
     email: {

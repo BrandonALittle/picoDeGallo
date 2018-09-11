@@ -11,7 +11,7 @@ const GET_USER = gql `
     }
 `;
 
-const Profile = (props) => (
+const Profile = () => (
     <Query query={GET_USER}>
         {({ loading, error, data }) => {
             if (loading) return null

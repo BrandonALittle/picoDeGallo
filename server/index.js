@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 const secret = require('../.env');
 
 // connect to database
-mongoose.connect("mongodb://localhost:27017/langnation");
+mongoose.connect("mongodb://localhost:27017/langnation", { useNewUrlParser: true });
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error: '));
 

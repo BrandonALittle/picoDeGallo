@@ -7,15 +7,17 @@ import { InMemoryCache } from 'apollo-cache-inmemory';
 
 import { setContext } from 'apollo-link-context';
 import Profile from './profile';
+import App from './app';
 
 
 // Apollo Client config
 const httpLink = createHttpLink({
-    uri: 'http://localhost:8085/graphql'
+    uri: 'http://localhost:8085/graphql',
 });
 
+// send authentication with every client request
 const authLink = setContext((_, { headers }) => {
-    const token = localStorage.getItem('connect.sid');
+    const token = localStorage.getItem('authToken');
     console.log(token);
     return {
         headers: {
@@ -28,16 +30,8 @@ const authLink = setContext((_, { headers }) => {
 const client = new ApolloClient({
     link: authLink.concat(httpLink),
     cache: new InMemoryCache(),
+    connectToDevTools: true
 });
-
-const App = (props) => (
-    <div>
-        {/* <Consumer>
-            {(message) => <div><h1>{message}</h1></div>}
-        </Consumer> */}
-        <Profile />
-    </div>
-);
 
 const { Provider, Consumer } = React.createContext();
 
