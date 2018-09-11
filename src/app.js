@@ -1,6 +1,7 @@
 import React from 'react';
 import Profile from './profile';
 import Login from './login';
+import Signup from './signup';
 
 class App extends React.Component {
 
@@ -28,6 +29,7 @@ class App extends React.Component {
             <div>
                 <Profile />
                 <Login saveAuthToken={this.storeJWT}/>
+                <Signup saveAuthToken={this.storeJWT}/>
             </div>
         )
     }

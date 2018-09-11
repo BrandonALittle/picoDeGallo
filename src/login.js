@@ -37,7 +37,7 @@ const Login = ({ saveAuthToken }) => {
                     placeholder="password"
                     ref={password}
                   />
-                  <button type="submit">LOGIN</button>
+                  <button type="submit">Login</button>
                 </form>
                 {loading && <p>Loading...</p>}
                 {error && <p>Error :( Please try again</p>}
