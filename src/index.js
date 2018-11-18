@@ -4,8 +4,8 @@ import { ApolloProvider } from 'react-apollo';
 import { ApolloClient } from 'apollo-client';
 import { createHttpLink } from 'apollo-link-http';
 import { InMemoryCache } from 'apollo-cache-inmemory';
-
 import { setContext } from 'apollo-link-context';
+
 import Profile from './profile';
 import App from './app';
 
