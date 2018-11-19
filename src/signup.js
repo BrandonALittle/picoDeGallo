@@ -23,7 +23,7 @@ const Signup = ({ saveAuthToken }) => {
                             signup({ variables: {
                                 username: username.current.value,
                                 email: email.current.value,
-                                password: email.current.value
+                                password: password.current.value
                             }}).then((data) => {
                                 saveAuthToken(data.data.signup);
                             });
