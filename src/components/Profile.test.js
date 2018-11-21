@@ -1,12 +1,12 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import Login from './login';
+import Profile from './Profile';
 
-describe('Login', () => {
+describe('Profile', () => {
     it('should render correctly', () => {
 
-        const component = shallow(<Login />);
+        const component = shallow(<Profile />);
 
         expect(component).toBeDefined();
     });

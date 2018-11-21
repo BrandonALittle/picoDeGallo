@@ -2,6 +2,7 @@ import React from 'react';
 import { gql } from 'apollo-boost';
 import { Mutation } from 'react-apollo';
 
+
 const LOGIN = gql`
     mutation LogIn($email: String!, $password: String!) {
         login(email: $email, password: $password) 
