@@ -1,7 +1,7 @@
 import React from 'react';
-import Profile from './profile';
-import Login from './login';
-import Signup from './signup';
+import Profile from './components/profile';
+import Login from './components/login';
+import Signup from './components/signup';
 
 class App extends React.Component {
 
