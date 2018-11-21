@@ -4,7 +4,7 @@
   "description": "A langauge learning app",
   "main": "server/index.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest --verbose",
     "build": "webpack --watch",
     "start": "webpack-dev-server"
   },
